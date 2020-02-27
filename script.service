@@ -1,0 +1,9 @@
+[Unit]
+Description=Disk space + loop to keep the service running.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/scripts/disk_space.sh
+
+[Install]
+WantedBy=multi-user.target
